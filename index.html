@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naveen | Java Developer</title>
+  <title>Naveenkumar G | Java Backend Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
@@ -28,118 +28,93 @@
       background-size: cover;
       color: var(--text-light);
       line-height: 1.6;
-      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     a {
       color: var(--accent);
       text-decoration: none;
-      transition: color var(--transition);
-    }
-
-    a:hover {
-      color: #fff;
     }
 
     header {
-      position: relative;
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 20px;
       background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
     }
 
     header h1 {
       font-size: 3rem;
-      letter-spacing: 2px;
       color: #fff;
     }
 
     header p {
-      font-size: 1.2rem;
-      margin: 1rem 0;
+      margin-top: 10px;
       color: var(--text-muted);
+      font-size: 1.2rem;
     }
 
     nav {
+      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 10px;
-      margin-top: 2rem;
+      justify-content: center;
     }
 
     nav a,
     #toggle-theme {
-      color: #ddd;
       padding: 10px 15px;
-      font-weight: bold;
-      background: none;
       border: 1px solid var(--accent);
-      border-radius: 4px;
+      color: #ddd;
+      background: none;
       cursor: pointer;
-      transition: background var(--transition), color var(--transition);
-    }
-
-    #toggle-theme:hover,
-    nav a:hover {
-      background: rgba(0, 234, 255, 0.2);
+      border-radius: 4px;
+      font-weight: bold;
     }
 
     .section {
-      padding: 60px 20px;
-      margin: 20px auto;
       max-width: 900px;
-      backdrop-filter: blur(8px);
+      margin: 30px auto;
+      padding: 60px 20px;
       background: var(--bg-section);
+      backdrop-filter: blur(8px);
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 234, 255, 0.1);
     }
 
     .section h2 {
-      font-size: 2rem;
       border-bottom: 2px solid var(--accent);
       display: inline-block;
-      margin-bottom: 1rem;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      color: var(--text-muted);
     }
 
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      margin-top: 20px;
     }
 
     .project-card {
       background: rgba(255, 255, 255, 0.05);
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-    }
-
-    .project-card h3 {
-      margin-bottom: 0.5rem;
-    }
-
-    .project-card p {
-      color: var(--text-muted);
-      margin-bottom: 1rem;
     }
 
     .social-icons {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 20px;
       margin-top: 15px;
     }
@@ -147,124 +122,127 @@
     .social-icons a {
       font-size: 1.8rem;
       color: var(--text-muted);
-      transition: color var(--transition);
-    }
-
-    .social-icons a:hover {
-      color: var(--accent);
     }
 
     footer {
       text-align: center;
       padding: 20px;
       color: var(--text-muted);
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .dark-mode {
-      background-color: #000;
-      color: var(--text-light);
-    }
-
-    .dark-mode .section {
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .dark-mode .project-card {
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    .dark-mode a {
-      color: var(--accent);
-    }
-
-    .dark-mode .social-icons a {
-      color: var(--text-light);
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      .section {
-        padding: 40px 15px;
-      }
-
-      nav a,
-      #toggle-theme {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-      }
-
-      .project-card {
-        padding: 15px;
-      }
+      background: rgba(0, 0, 0, 0.4);
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Naveenkumar G</h1>
-      <p>Java Backend Developer | Spring Boot | REST APIs</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <button id="toggle-theme">🌙 Dark Mode</button>
-      </nav>
+
+<header>
+  <div>
+    <h1>Naveenkumar G</h1>
+    <p>Java Backend Developer | Spring Boot | Microservices | AWS</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle-theme">🌙 Dark Mode</button>
+    </nav>
+  </div>
+</header>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a Java Backend Developer with over 4 years of experience designing and
+    building scalable backend systems using Java, Spring Boot, and Microservices.
+    I have worked extensively in the Airlines and Logistics domains, supporting
+    high-throughput enterprise applications.
+  </p>
+  <p>
+    My expertise includes RESTful API development, performance optimization,
+    production issue analysis, and monitoring using Splunk and AppDynamics.
+    I have hands-on experience with AWS, Apache Kafka, Oracle PL/SQL,
+    Apache Solr, and Elasticsearch.
+  </p>
+</section>
+
+<section id="skills" class="section">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> Java, Python</li>
+    <li><strong>Frameworks:</strong> Spring Boot, Spring MVC, Hibernate</li>
+    <li><strong>Architecture:</strong> Microservices, REST APIs</li>
+    <li><strong>Messaging:</strong> Apache Kafka</li>
+    <li><strong>Databases:</strong> Oracle PL/SQL, MySQL, NoSQL</li>
+    <li><strong>Search & Indexing:</strong> Apache Solr, Elasticsearch</li>
+    <li><strong>Cloud & DevOps:</strong> AWS, Git, Maven, Jenkins (CI/CD)</li>
+    <li><strong>Monitoring:</strong> Splunk, AppDynamics</li>
+    <li><strong>Practices:</strong> Agile (Scrum), SDLC, Design Patterns</li>
+  </ul>
+</section>
+
+<section id="experience" class="section">
+  <h2>Professional Experience</h2>
+
+  <h3>Custom Software Engineering Analyst – Accenture</h3>
+  <p><em>September 2024 – Present</em></p>
+  <ul>
+    <li>Designed and developed scalable Java Spring Boot microservices for logistics systems.</li>
+    <li>Implemented automated diagnostics and validation logic, reducing recurring defects by ~30%.</li>
+    <li>Performed root cause analysis and delivered permanent production fixes.</li>
+    <li>Integrated monitoring and observability using Splunk and AppDynamics.</li>
+  </ul>
+
+  <h3>Systems Engineer – Tata Consultancy Services</h3>
+  <p><em>December 2021 – September 2024</em></p>
+  <ul>
+    <li>Developed RESTful APIs using Spring Boot, improving response times by 30%.</li>
+    <li>Built backend services for airline and airport operational applications.</li>
+    <li>Optimized database queries and improved overall system performance.</li>
+    <li>Worked in Agile teams delivering high-quality releases.</li>
+  </ul>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>E-Commerce Backend Application</h3>
+      <p>
+        Backend-only e-commerce system built using Java and Spring Boot,
+        providing RESTful APIs for authentication, product management,
+        cart operations, and order processing.
+      </p>
+      <p>
+        Followed layered architecture and REST standards with proper HTTP methods
+        and status codes. Used MySQL for persistent data storage.
+      </p>
+      <p><strong>Tech Stack:</strong> Java, Spring Boot, REST APIs, MySQL</p>
+      <a href="https://github.com/Navi3116" target="_blank">View on GitHub</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate and results-driven software developer with 4 years of experience in backend development, primarily in the Airlines and Hospitality domain. I specialize in building scalable, high-performance systems using Java, Spring Boot, and Microservices architecture.
-      In addition to my core expertise, I have hands-on experience with Python Flask and a growing interest in Large Language Models (LLMs), which broadens my ability to work across modern tech stacks. I’m committed to continuous learning, clean coding practices, and delivering innovative, reliable software solutions.
-    </p>
-  </section>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:naveenkumarg.auto@gmail.com">naveenkumarg.auto@gmail.com</a></p>
+  <p>Resume: <a href="./Naveenkumar_CV.docx" download>Download Resume</a></p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/naveenkumar-g-2983a5170/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Navi3116" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>E-Commerce</h3>
-        <p>This project is a backend-only e-commerce application built using Java and Spring Boot.
-It provides RESTful APIs for user authentication, product management, cart operations,
-and order processing. Data persistence is handled using MySQL, and the application
-follows a layered architecture for maintainability and scalability.</p>
-        <a href="https://github.com/Navi3116" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+<footer>
+  © 2025 Naveenkumar G | Java Backend Developer
+</footer>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:naveenkumarg.auto@gmail.com">naveenkumarg.auto@gmail.com</a></p>
-    <p>Resume: <a href="./Naveenkumar_CV.docx" download>📄 Download Resume (docx)</a></p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/naveenkumar-g-2983a5170/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Navi3116" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.instagram.com/__na__ve__en_/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-  </section>
+<script>
+  const toggleButton = document.getElementById('toggle-theme');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
 
-  <footer>
-    <p>© 2025 Naveen | Java Developer</p>
-  </footer>
-
-  <script>
-    const toggleButton = document.getElementById('toggle-theme');
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      toggleButton.textContent =
-        document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-    });
-  </script>
 </body>
 </html>
